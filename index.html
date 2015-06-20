@@ -1,0 +1,15 @@
+<html ng-app="image">
+  <title>Image</title>
+  <link href="jspm_packages/github/angular/bower-material@0.10.0/angular-material.min.js" rel="stylesheet">
+  <header ui-view="toolbar"></header>
+  <section ui-view="content"></section>
+  <script src="/jspm_packages/system.js"></script>
+  <script src="/config.js"></script>
+  <script>
+    System.import('app').then(function(app) {
+      console.log('Image is up and running');
+    }, function(err) {
+      console.error('An error occured: ' + err);
+    });
+  </script>
+</html>
